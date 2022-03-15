@@ -1,3 +1,4 @@
+using PascalsTriangle.App;
 using System;
 using Xunit;
 
