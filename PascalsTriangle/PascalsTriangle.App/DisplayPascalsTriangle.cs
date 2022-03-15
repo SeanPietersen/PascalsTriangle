@@ -6,8 +6,15 @@ namespace PascalsTriangle.App
     {
         public long[][] Pascal(long depth)
         {
-            long[][] arr = new long[depth][];
-            
+            long[][] arr = new long[depth][] ;
+            int count = 1;
+
+            for (int i = 0; i < depth; i++)
+            {   
+                arr[i] = new long[count];
+                count++;
+            }
+
             for (int line = 0; line < depth; line++)
             {
                 for (int index = 0; index <= line; index++)
